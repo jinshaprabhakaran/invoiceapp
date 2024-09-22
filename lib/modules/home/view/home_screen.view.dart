@@ -121,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               customerName: invoice.customerName,
                               date: homCtrl.convertDate(invoice.date),
                               invoiceNum: invoice.invoiceNumber,
-                              total: invoice.totalAmount.toString(),
+                              total: invoice.totalAmount.toStringAsFixed(1),
                               balance: invoice.balanceAmount.toStringAsFixed(1),
                             );
                           },
