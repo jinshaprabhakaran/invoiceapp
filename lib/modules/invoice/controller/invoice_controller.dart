@@ -35,12 +35,13 @@ class InvoiceController extends ChangeNotifier{
   String unit = '';
   String tax = '';
   String selectedTax = '';
+  String selectedState = 'Kerala';
     List<String> invoiceNumbers = ['23-24-01 16', '23-24-02 17', '23-24-03 18'];
     List<String> firmNames = ['xianinfotech LLP','TCS','Wipro'];
    List<String> units = ['gram','kilogram','liter'];
      List<String> taxes = ['Without tax','with tax'];
        List<String> taxesTypes = ['None','GST','use-tax'];
-
+       List<String> states = ['Kerala','TamilNadu','Assam','Bihar'];
        //image,document,notes
 File? image;
   File? document;

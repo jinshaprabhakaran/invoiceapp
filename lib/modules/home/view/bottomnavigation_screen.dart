@@ -7,14 +7,14 @@ import 'package:invoice/global/constants/styles/colors.dart';
 import 'package:invoice/modules/home/controller/home_controller.dart';
 import 'package:provider/provider.dart';
 
-class DashBoardScreen extends StatefulWidget {
-  const DashBoardScreen({super.key});
+class BottomNavigationScreen extends StatefulWidget {
+  const BottomNavigationScreen({super.key});
 
   @override
-  State<DashBoardScreen> createState() => _DashBoardScreenState();
+  State<BottomNavigationScreen> createState() => _BottomNavigationScreenState();
 }
 
-class _DashBoardScreenState extends State<DashBoardScreen> {
+class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   @override
   void initState(){
     super.initState();

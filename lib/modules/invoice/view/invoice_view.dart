@@ -118,6 +118,10 @@ class _InvoiceScreenState extends State<InvoiceScreen> {
                     invoCtrl.isMoneySelected[0] = value == 'Credit';
                     invoCtrl.isMoneySelected[1] = value == 'Cash';
                   });
+               },onStateChanged: (value){
+                setState(() {
+                  invoCtrl.selectedState = value.toString();
+                });
                },) : const SizedBox(),
               Gap(10.h),
              invoCtrl.itemsList.isNotEmpty ? const DescriptionSection(): const SizedBox(),

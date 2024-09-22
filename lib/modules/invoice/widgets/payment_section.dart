@@ -9,8 +9,9 @@ import '../../../global/constants/widgets/dropdown_widget.dart';
 import '../controller/invoice_controller.dart';
 
 class PaymentSection extends StatelessWidget {
-  const PaymentSection({super.key,required this.onPaymentChanged});
+  const PaymentSection({super.key,required this.onPaymentChanged,required this.onStateChanged});
    final ValueChanged<String?> onPaymentChanged;
+     final ValueChanged<String?> onStateChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -37,9 +38,9 @@ class PaymentSection extends StatelessWidget {
         children: [
           KStyles().semiBold15(text: 'State of Supply',color: kGrey),
           CommonDropdown(
-            items: const ['State 1', 'State 2', 'State 3'],
-            selectedItem: 'State 1',
-            onChanged: (String? newValue) {},
+            items: invoCtrl.states,
+            selectedItem: invoCtrl.selectedState,
+            onChanged: onStateChanged,
           ),
         ],
       ),
