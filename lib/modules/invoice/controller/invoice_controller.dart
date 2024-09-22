@@ -86,10 +86,8 @@ File? image;
   }
   double balance = 0.0;
   calculateBalanceAmount() {
-    
     double dueAmount = double.tryParse(dueCtrl.text) ?? 0.0;
 
-    
     balance = totalItemAmount - dueAmount;
 
     notifyListeners();

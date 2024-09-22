@@ -105,7 +105,7 @@ class _InvoiceScreenState extends State<InvoiceScreen> {
                 invoCtrl.isReceived = value!;
               
                 if (invoCtrl.isReceived) {
-                  invoCtrl.dueCtrl.text = invoCtrl.totalItemAmount.toString(); 
+                  invoCtrl.dueCtrl.text = invoCtrl.totalItemAmount.toStringAsFixed(2); 
                 } else {
                   invoCtrl.dueCtrl.text = '0.0'; 
                 }
