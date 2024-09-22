@@ -117,8 +117,7 @@ File? image;
   discountCtrl.text = '';
   isSelected = [true,false];
   additional.text = '';
-
-
+  
   }
 
 // calculating for different items
@@ -215,7 +214,7 @@ firmName ='xianinfotech LLP';
   balance = 0.0;
   dueCtrl.text = '';
  itemsList.clear();
-
+ isReceived = false;
  notifyListeners();
 } 
 
